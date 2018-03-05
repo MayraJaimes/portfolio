@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.wrapper > div {
+    background: #25242b;
+    padding: 1em;
+    color: white;
+    clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
+}
+
+.wrapper > div:nth-child(even) {
+    background: #ffffff;
+    color: black;
+}
+
+.nested > div {
+    border: pink 1px solid;
+}
+
+
+
+
