@@ -5,20 +5,19 @@ body {
 .wrapper {
     display: grid;
     grid-auto-rows: minmax(600px, auto);
+    font-family: "Rubik", sans-serif;
 }
 
-.nested {
+.nested, .nestedTwo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
-    grid-gap: 1em;
 }
 
 .wrapper > div {
     background: #25242b;
     padding: 1em;
-    color: white;
     padding: 90px 200px;
+    color: white;
     clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
 }
 
@@ -27,9 +26,31 @@ body {
     color: black;
 }
 
-.nested > div {
-    border: pink 1px solid;
+.nested > div  {
+    width: 280px;
+    padding: 0 15px 0 15px; 
+} 
+
+.nested > div:nth-child(even) {
+    width: 600px;
 }
+
+.nestedTwo > div  {
+    width: 280px;
+    padding: 0 15px 0 15px; 
+} 
+
+.nestedTwo > div:nth-child(odd) {
+    width: 600px;
+}
+
+.projImg {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
 
 h3 {
     font-size: 24px;
@@ -59,5 +80,33 @@ h1, h2, h3 {
     margin-bottom: 25px;
 }
 
+.header h5 {
+    margin-bottom: 60px;
+}
 
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 240px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 86px;
+    height: 58px;
+}
+
+.icon:hover {
+    width: 86px;
+    height: 58px;
+    background: white;    
+}
+
+.icon img {
+    padding-top: 15%;
+}
+
+p {
+    line-height: 24px;
+}
 
