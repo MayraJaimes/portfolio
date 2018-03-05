@@ -13,12 +13,33 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.nestedTwo {
+    padding: 20px 200px;  
+}
+
+.allProj {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-items: center; */
+    grid-gap: 2em;
+    padding: 60px 10px;
+}
+
+.allProj > div {
+    background-color: #7367b8;
+    min-height: 240px;
+}
+
+
 .wrapper > div {
     background: #25242b;
-    padding: 1em;
     padding: 90px 200px;
     color: white;
     clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
+}
+
+.wrapper > div:nth-child(3) {
+    padding: 90px 0;
 }
 
 .wrapper > div:nth-child(even) {
@@ -26,21 +47,21 @@ body {
     color: black;
 }
 
-.nested > div  {
-    width: 280px;
-    padding: 0 15px 0 15px; 
-} 
-
-.nested > div:nth-child(even) {
+.nested > div {
     width: 600px;
+    padding: 0 15px 0 15px; 
 }
+
+.nested > div:first-child  {
+    width: 280px;
+} 
 
 .nestedTwo > div  {
     width: 280px;
     padding: 0 15px 0 15px; 
 } 
 
-.nestedTwo > div:nth-child(odd) {
+.nestedTwo > div:first-child {
     width: 600px;
 }
 
@@ -49,6 +70,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+}
+
+.projImg a {
+    margin-top: 20px;
 }
 
 
@@ -109,4 +134,6 @@ h1, h2, h3 {
 p {
     line-height: 24px;
 }
+
+
 
