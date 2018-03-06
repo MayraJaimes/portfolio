@@ -126,11 +126,11 @@ h1.title, h3.title {
     margin-bottom: 25px;
 }
 
-.icon:hover {
+/* .icon:hover {
     width: 86px;
     height: 58px;
     background: white;    
-}
+} */
 
 .icon img {
     padding-top: 15%;
@@ -146,6 +146,10 @@ p {
 
 .contact {
     text-align: center;
+}
+
+.fa-linkedin-in {
+    font-size: 3em;
 }
 
 
