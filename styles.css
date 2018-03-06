@@ -9,29 +9,24 @@ body {
 
 .section1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .section2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.section1 img, .section2 img {
-    max-height: 450px;
-    margin-top: 25px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
-    padding: 9% 1% 4% 1%;
+    padding: 9% 2% 4% 2%;
 }
 
 .projects > div {
     background-color: #7367b8;
-    min-height: 240px;
+    height: 15em;
 }
 
 .wrapper > div {
@@ -51,7 +46,7 @@ body {
 }
 
 .section1 > div:nth-child(2) {
-    justify-self: start;
+    justify-self: center;
 }
 
 .section2 > div  {
@@ -62,22 +57,6 @@ body {
     justify-self: center;
     max-width: 55%;
 } 
-
-.projImg img {
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h5 {
-    font-size: 14;
-}
 
 h4, h5, h6 {
     margin: 10px 0 10px 0;
@@ -157,4 +136,8 @@ i {
     color: black;
 }
 
-
+.section1 img, .section2 img{
+    max-width: 50%;
+    height: auto;
+    margin-top: 25px;
+}
