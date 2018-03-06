@@ -4,7 +4,6 @@ body {
 }
 .wrapper {
     display: grid;
-    grid-auto-rows: minmax(600px, auto);
     font-family: "Rubik", sans-serif;
 }
 
@@ -17,7 +16,7 @@ body {
     padding: 20px 200px;  
 }
 
-.allProj {
+.projects {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* justify-items: center; */
@@ -25,11 +24,10 @@ body {
     padding: 60px 10px;
 }
 
-.allProj > div {
+.projects > div {
     background-color: #7367b8;
     min-height: 240px;
 }
-
 
 .wrapper > div {
     background: #25242b;
@@ -75,7 +73,6 @@ body {
 .projImg a {
     margin-top: 20px;
 }
-
 
 h3 {
     font-size: 24px;
@@ -135,5 +132,12 @@ p {
     line-height: 24px;
 }
 
+.resume > div {
+    width: 750px;
+}
+
+.contact {
+    text-align: center;
+}
 
 
