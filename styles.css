@@ -53,8 +53,13 @@ body {
     justify-self: end;
 } 
 
-.section1 > div, .section2 > div:nth-child(2) {
-    justify-self: center;
+.section1 > div{
+    justify-self: end;
+    max-width: 55%;
+} 
+
+.section2 > div:nth-child(2) {
+    justify-self: start;
     max-width: 55%;
 } 
 
