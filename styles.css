@@ -7,12 +7,12 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
-.nested, .nestedTwo {
+.project1, .project2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.nestedTwo {
+.project2 {
     padding: 20px 200px;  
 }
 
@@ -45,21 +45,21 @@ body {
     color: black;
 }
 
-.nested > div {
+.project1 > div {
     width: 600px;
     padding: 0 15px 0 15px; 
 }
 
-.nested > div:first-child  {
+.project1 > div:first-child  {
     width: 280px;
 } 
 
-.nestedTwo > div  {
+.project2 > div  {
     width: 280px;
     padding: 0 15px 0 15px; 
 } 
 
-.nestedTwo > div:first-child {
+.project2 > div:first-child {
     width: 600px;
 }
 
