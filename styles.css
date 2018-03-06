@@ -7,14 +7,16 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
-.project1, .project2 {
+.section1, .section2 {
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+    grid-template-columns: 1fr 1fr;
 }
 
-.project2 {
-    padding: 20px 0;  
+.section1 img, .section2 img {
+    max-width: 75%;
+    max-height: 450px;
+    margin-top: 25px;
 }
 
 .projects {
@@ -31,13 +33,13 @@ body {
 
 .wrapper > div {
     background: #25242b;
-    padding: 90px 0px;
+    padding: 6% 0px;
     color: white;
     clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
 }
 
 .wrapper > div:nth-child(3) {
-    padding: 90px 0;
+    padding: 9% 0;
 }
 
 .wrapper > div:nth-child(even) {
@@ -45,32 +47,25 @@ body {
     color: black;
 }
 
-.project1 > div {
+.section1 > div  {
+    justify-self: end;
+    max-width: 70%;
+} 
+
+.section1 > div:nth-child(2) {
     justify-self: start;
-    padding: 0 15px 0 15px; 
 }
 
-.project1 > div:first-child  {
+.section2 > div  {
     justify-self: end;
 } 
 
-.project2 > div  {
-    padding: 0 15px 0 15px; 
+.section2 > div:nth-child(2) {
     justify-self: start;
-} 
-
-.project2 > div:first-child {
-    justify-self: end;
+    max-width: 70%;
 }
 
-.projImg {
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-}
-
-.projImg a {
+.projImg img {
     margin-top: 20px;
 }
 
@@ -94,38 +89,45 @@ h1, h2, h3 {
     margin: 20px 0 10px 0;
 }
 
-.header {
+#showcase {
     text-align: center;
 }
 
-.header h1 {
+#showcase h1 {
     margin-bottom: 25px;
 }
 
-.header h5, .contact p {
-    margin-bottom: 60px;
+#showcase h5, .contact p {
+    margin-bottom: 45px;
+}
+
+.portfolio_pic {
+    width: 20%;
+    border-radius: 15px;
 }
 
 .icons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 12%;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+}
+
+.icons > div {
+    justify-self: end;
+}
+
+.icons > div:nth-child(2) {
+    justify-self: start;
 }
 
 i {
    font-size: 50px;
+   color: white;
 }
 
 h1.title, h3.title {
     margin-bottom: 25px;
 }
-
-/* .icon:hover {
-    width: 86px;
-    height: 58px;
-    background: white;    
-} */
 
 .icon img {
     padding-top: 15%;
@@ -135,8 +137,8 @@ p {
     line-height: 24px;
 }
 
-.resume > div {
-    width: 75%;
+.section3 > div {
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -144,8 +146,17 @@ p {
     text-align: center;
 }
 
-.fa-linkedin-in {
-    font-size: 3em;
+.icon img {
+    width: 20%;
+}
+
+.icons img:hover {
+    text-decoration: none; 
+    background:gray;
+}
+
+i {
+    color: black;
 }
 
 
