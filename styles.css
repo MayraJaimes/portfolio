@@ -1,25 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-}
-.wrapper {
-    display: grid;
     font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.wrapper > div {
+    background: #25242b;
+    padding: 6% 0px;
+    color: white;
+    clip-path: polygon(0 0,100% 1%,100% 96%,0 100%);
 }
 
 .section1, .section2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.projects {
-    padding: 9% 2% 4% 2%;
+    grid-template-columns: 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 2em;
+    width: 84%;
+    margin: 50px auto;
 }
 
 .projects > div {
@@ -27,15 +30,9 @@ body {
     height: 18em;
 }
 
-.wrapper > div {
-    background: #25242b;
-    padding: 6% 0px;
-    color: white;
-    clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
-}
-
 .wrapper > div:nth-child(3) {
     padding: 9% 0;
+    clip-path: polygon(0 0,100% 1%,100% 99%,0 100%);
 }
 
 .wrapper > div:nth-child(even) {
@@ -48,19 +45,18 @@ body {
 }
 
 .section2 > div  {
-    justify-self: end;
+    justify-self: center;
 } 
 
 .section1 > div{
-    justify-self: end;
-    max-width: 55%;
+    justify-self: center;
+    max-width: 75%;
 } 
 
 .section2 > div:nth-child(2) {
-    justify-self: start;
-    max-width: 55%;
+    justify-self: center;
+    max-width: 75%;
 } 
-
 
 #showcase {
     text-align: center;
@@ -133,7 +129,7 @@ i {
 }
 
 .section1 img, .section2 img{
-    max-width: 50%;
+    width: 130px;
     height: auto;
     margin-top: 25px;
 }
@@ -144,14 +140,51 @@ i {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2em;
     }
+
+    /* .section1 img, .section2 img{
+        width: 130px;
+        margin-top: 25px;
+    } */
 }
 
 @media only screen and (min-width: 980px) {
+    .section2 > div  {
+        justify-self: end;
+    } 
+    
+    .section1 > div{
+        justify-self: end;
+        max-width: 55%;
+    } 
+    
+    .section2 > div:nth-child(2) {
+        justify-self: start;
+        max-width: 55%;
+    } 
+    
+    .section1, .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .projects {
+        padding: 9% 2% 4% 2%;
+    }
+
+    .wrapper > div {
+        clip-path: polygon(0 0,100% 4%,100% 96%,0 100%);
+    }
+
     .projects {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
     }
+
+    /* .section1 img, .section2 img{
+        width: 130px;
+        margin-top: 25px;
+    } */
 }
 
 @media only screen and (min-width: 1240px) {
