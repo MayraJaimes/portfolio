@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
-    text-align: center;
+    text-align: justify;
 }
 
 .wrapper > div {
@@ -67,7 +67,7 @@ body {
 }
 
 #showcase h5, .contact p {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .portfolio_pic {
@@ -90,12 +90,15 @@ body {
 }
 
 i {
-   font-size: 50px;
-   color: white;
+   font-size: 35px;
 }
 
 h1.title, h3.title {
     margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
 }
 
 .icon img {
@@ -119,37 +122,64 @@ p {
     width: 20%;
 }
 
+.icons img {
+    width: 40px;
+}
+
 .icons img:hover {
     text-decoration: none; 
     background:gray;
 }
 
-i {
-    color: black;
-}
-
 .section1 img, .section2 img{
     width: 130px;
     height: auto;
-    margin-top: 25px;
+    margin: 25px 0 25px 0;
 }
 
 @media only screen and (min-width: 768px) {
+    #showcase h5, .contact p {
+        margin-bottom: 45px;
+    }
+
+    .section1, .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2em;
+        width: 94%;
     }
 
-    /* .section1 img, .section2 img{
-        width: 130px;
-        margin-top: 25px;
-    } */
+    .section1 > div{
+        justify-self: end;
+        max-width: 65%;
+    } 
+    
+    .section2 > div:nth-child(2) {
+        justify-self: start;
+        max-width: 65%;
+    } 
+
+    .section1 img, .section2 img{
+        width: 150px;
+    }
 }
 
 @media only screen and (min-width: 980px) {
+    i {
+        font-size: 50px;
+     }
+     
+    .icons img {
+        width: 64px;
+    }
+
     .section2 > div  {
-        justify-self: end;
+        justify-self: center;
     } 
     
     .section1 > div{
@@ -168,7 +198,7 @@ i {
     }
     
     .projects {
-        padding: 9% 2% 4% 2%;
+        padding: 2% 2% 0 2%;
     }
 
     .wrapper > div {
