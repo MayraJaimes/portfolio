@@ -3,12 +3,16 @@ body {
     padding: 0;
     font-family: "Rubik", sans-serif;
     text-align: justify;
-    background: #edeced;
+    background: #c2b480;
     color: #383838;
 }
 
+h1, h3, h4, h5 {
+    color: black;
+}
+
 .wrapper > div {
-    background: #c2b480;
+    background: #edeced;
     padding: 6% 0px;
     clip-path: polygon(0 0,100% 1%,100% 96%,0 100%);
 }
@@ -37,7 +41,7 @@ body {
 }
 
 .wrapper > div:nth-child(even) {
-    background: #edeced;
+    background: #c2b480;
 }
 
 .section1 > div:nth-child(2) {
@@ -75,22 +79,9 @@ body {
     border-radius: 15px;
 }
 
-.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-}
-
-.icons > div {
-    justify-self: end;
-}
-
-.icons > div:nth-child(2) {
-    justify-self: start;
-}
-
 i {
    font-size: 35px;
+   color: black;
 }
 
 h1.title, h3.title {
