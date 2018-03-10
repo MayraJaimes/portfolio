@@ -113,6 +113,45 @@ p {
     max-width: 80%;
 }
 
+
+.container {
+    position: relative;
+  }
+  
+  .appImage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e1d0bb;
+  }
+  
+  .container:hover .overlay {
+    opacity: .90;
+  }
+  
+  .text {
+    text-align: center;
+    color: #383838;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
 @media only screen and (min-width: 768px) {
     #showcase h5, .contact p {
         margin-bottom: 45px;
@@ -173,8 +212,4 @@ p {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
     }
-}
-
-@media only screen and (min-width: 1240px) {
-
 }
