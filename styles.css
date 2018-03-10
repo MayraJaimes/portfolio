@@ -35,6 +35,11 @@ h1, h3, h4, h5 {
     height: 18em;
 }
 
+.projects img {
+    width: 100%;
+    height: 100%;
+}
+
 .wrapper > div:nth-child(3) {
     padding: 9% 0;
     clip-path: polygon(0 0,100% 1%,100% 99%,0 100%);
@@ -44,33 +49,16 @@ h1, h3, h4, h5 {
     background: #c2b480;
 }
 
-.section1 > div:nth-child(2) {
+.section2 > div, .section1 > div:nth-child(2) {
     justify-self: center;
 }
 
-.section2 > div  {
-    justify-self: center;
-} 
-
-.section1 > div{
+.section1 > div, .section2 > div:nth-child(2) {
     justify-self: center;
     max-width: 75%;
 } 
 
-.section2 > div:nth-child(2) {
-    justify-self: center;
-    max-width: 75%;
-} 
-
-#showcase {
-    text-align: center;
-}
-
-#showcase h1 {
-    margin-bottom: 25px;
-}
-
-#showcase h5, .contact p {
+#showcase h1, #showcase h5, .contact p, h1.title, h3.title {
     margin-bottom: 25px;
 }
 
@@ -84,11 +72,7 @@ i {
    color: black;
 }
 
-h1.title, h3.title {
-    margin-bottom: 25px;
-}
-
-h1, .description{
+h1, .description, #showcase, .contact{
     text-align: center;
 }
 
@@ -105,10 +89,6 @@ p {
     margin: 0 auto;
 }
 
-.contact {
-    text-align: center;
-}
-
 .icon img {
     width: 20%;
 }
@@ -122,10 +102,15 @@ p {
     background:gray;
 }
 
-.section1 img, .section2 img{
-    width: 130px;
+.section2 img, .section1 img {
+    max-width: 70%;
     height: auto;
-    margin: 25px 0 25px 0;
+    display: block;
+    margin: 15px auto;
+}
+
+.section1 img {
+    max-width: 80%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,19 +131,12 @@ p {
     }
 
     .section1 > div{
-        justify-self: end;
         max-width: 65%;
     } 
     
     .section2 > div:nth-child(2) {
-        justify-self: start;
         max-width: 65%;
     } 
-
-    .section1 img, .section2 img{
-        width: 150px;
-    }
-}
 
 @media only screen and (min-width: 980px) {
     i {
@@ -168,18 +146,12 @@ p {
     .icons img {
         width: 64px;
     }
-
-    .section2 > div  {
-        justify-self: center;
-    } 
     
     .section1 > div{
-        justify-self: end;
         max-width: 55%;
     } 
     
     .section2 > div:nth-child(2) {
-        justify-self: start;
         max-width: 55%;
     } 
     
@@ -201,11 +173,6 @@ p {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
     }
-
-    /* .section1 img, .section2 img{
-        width: 130px;
-        margin-top: 25px;
-    } */
 }
 
 @media only screen and (min-width: 1240px) {
