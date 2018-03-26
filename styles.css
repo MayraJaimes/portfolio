@@ -144,12 +144,16 @@ p {
   .text {
     text-align: center;
     color: #383838;
-    font-size: 20px;
-    position: absolute;
+    font-size: 12px;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+
+  .text h3 {
+    margin-top: 0px;
   }
 
 @media only screen and (min-width: 768px) {
