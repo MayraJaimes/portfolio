@@ -17,6 +17,10 @@ h1, h3, h4, h5 {
   clip-path: polygon(0 0,100% 1%,100% 96%,0 100%);
 }
 
+.wrapper > div:nth-child(even) {
+  background: #00CED1;
+}
+
 .section1, .section2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -41,14 +45,7 @@ h1, h3, h4, h5 {
   height: 100%;
 }
 
-.wrapper > div:nth-child(3) {
-  padding: 9% 0;
-  clip-path: polygon(0 0,100% 1%,100% 99%,0 100%);
-}
 
-.wrapper > div:nth-child(even) {
-  background: #00CED1;
-}
 
 .section2 > div, .section1 > div:nth-child(2) {
   justify-self: center;
@@ -110,6 +107,14 @@ p {
 .container {
   position: relative;
   border: #edeced 4px solid;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding-top: 25%;
 }
 
 .appImage {
@@ -151,8 +156,8 @@ p {
 }
 
 .section2 img, .section1 img {
-  width: 300px;
-  height: 500px;
+  width: 350px;
+  height: 550px;
   display: block;
   margin: 15px auto;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;    
