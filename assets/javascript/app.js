@@ -56,7 +56,8 @@ for (i = 0; i<projectList.length; i++) {
  projectHTML = 
  `<div class="container" style="background-image: url(assets/images/${projectList[i].image});
     background-repeat:no-repeat;
-		background-size:cover;">
+    background-size:cover;
+    background-position: center;">
       <h2>${projectList[i].name}</h2>
       <a href="${projectList[i].link}">
       <div class="overlay">
@@ -70,5 +71,5 @@ for (i = 0; i<projectList.length; i++) {
       </a>
     </div>`
 
-    $(".projects").append(projectHTML);
-  }
+  $(".projects").append(projectHTML);
+}
