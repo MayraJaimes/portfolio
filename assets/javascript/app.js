@@ -22,7 +22,7 @@ var projectList = [
     description: 'In this game the app displays 4 heroes and 4 enemies. The user gets to pick a hero and this will be the character they will use for the game. They then choose the first enemy to fight. To win they have to defeat all the enemies\' health points.\'', 
     link: 'https://mayrajaimes.github.io/rpg_game/', 
     github: 'https://github.com/MayraJaimes/rpg_game',
-    image: 'rpg', 
+    image: 'herovillain', 
     technologies: 'HTML5, CSS, HTML5, CSS, Javascript, JQuery'
   },
   {
