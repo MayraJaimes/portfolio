@@ -70,8 +70,5 @@ for (i = 0; i<projectList.length; i++) {
       </a>
     </div>
    `
-
   $(".projects").append(projectHTML);
 }
-
-// <p>${projectList[i].description}</p>
