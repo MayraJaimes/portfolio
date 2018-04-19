@@ -25,14 +25,14 @@ var projectList = [
     image: 'rpg', 
     technologies: 'HTML5, CSS, HTML5, CSS, Javascript, JQuery'
   },
-  //   {
-  //   name: 'Hangman Game', 
-  //   description: 'The theme for this hangman game is Sports. The user has to guess what sport name is being displayed!', 
-  //   link: 'https://mayrajaimes.github.io/hangman_game/', 
-  //   github: 'https://github.com/MayraJaimes/hangman_game',
-  //   image: 'hangman.png', 
-  //   technologies: 'HTML5, CSS, HTML5, CSS, Javascript, JQuery'
-  // },
+  {
+    name: 'Hangman Game', 
+    description: 'The theme for this hangman game is Sports. The user has to guess what sport name is being displayed!', 
+    link: 'https://mayrajaimes.github.io/hangman_game/', 
+    github: 'https://github.com/MayraJaimes/hangman_game',
+    image: 'hangman', 
+    technologies: 'HTML5, CSS, HTML5, CSS, Javascript, JQuery'
+  },
   {
     name: 'Mongo Scraper', 
     description: 'The Mongo Scraper web app lets users view, save, and leave comments on the latest health news.', 
@@ -50,7 +50,7 @@ var projectList = [
     technologies: 'HTML5, CSS, Javascript, Node.js, Express, MySQL'
   },
   {
-    name: 'Friend Finder', 
+    name: 'Friend Match', 
     description: '', 
     link: 'https://friend-finder-survey-may.herokuapp.com/', 
     github: 'https://github.com/MayraJaimes/friend_match',
@@ -64,6 +64,7 @@ for (i = 0; i<projectList.length; i++) {
  `
  <div class="container" style="background-image: url(assets/images/${projectList[i].image}.png);
     background-repeat:no-repeat;
+    background-position: center;
     background-size:cover;">
     <a href="${projectList[i].link}">
       <div class="overlay">
