@@ -54,22 +54,24 @@ var projectList = [
 
 for (i = 0; i<projectList.length; i++) {
  projectHTML = 
- `<div class="container" style="background-image: url(assets/images/${projectList[i].image});
+ `
+ <div class="container" style="background-image: url(assets/images/${projectList[i].image});
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center;">
-      <h2>${projectList[i].name}</h2>
-      <a href="${projectList[i].link}">
+    <a href="${projectList[i].link}">
       <div class="overlay">
         <div class="text">
-          <h3>${projectList[i].name}</h3>
-          <p>${projectList[i].description}</p>
-          <h3>Technologies Used:</h3>
-          <p>HTML5, CSS, Javascript, JQuery</p> 
+          <h3>${projectList[i].name.toUpperCase()}</h3>
+          <p class="links"> <a href="${projectList[i].link}"> Github </a> | <a href="${projectList[i].link}"> Web </a> </p>
+          <p>Technologies Used: HTML5, CSS, Javascript, JQuery</p> 
         </div>
       </div>
       </a>
-    </div>`
+    </div>
+   `
 
   $(".projects").append(projectHTML);
 }
+
+// <p>${projectList[i].description}</p>
