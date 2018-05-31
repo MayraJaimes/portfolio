@@ -10,3 +10,5 @@ This is my portfolio showcasing the different applications that I have built so 
 * CSS
 * Javascript
 * JQuery
+
+
